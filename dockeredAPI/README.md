@@ -1,15 +1,15 @@
-### Build the Docker Image¶
+### Build the Docker Image
 Now that all the files are in place, let's build the container image.
 
 Go to the project directory
 Build your FastAPI image:
 docker build -t myimage .
 
-### Start the Docker Container¶
+### Start the Docker Container
 Run a container based on your image:
 docker run -d --name mycontainer -p 80:80 myimage
 
-### Check it¶
+### Check it
 You should be able to check it in your Docker container's URL, for example: http://192.168.99.100/predict/sample text info or http://127.0.0.1/predict/sample text info (or equivalent, using your Docker host).
 
 You will see something like:
