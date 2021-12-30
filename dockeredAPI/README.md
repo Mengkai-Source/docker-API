@@ -8,3 +8,14 @@ docker build -t myimage .
 ### Start the Docker Container¶
 Run a container based on your image:
 docker run -d --name mycontainer -p 80:80 myimage
+
+### Check it¶
+You should be able to check it in your Docker container's URL, for example: http://192.168.99.100/items/5?q=somequery or http://127.0.0.1/items/5?q=somequery (or equivalent, using your Docker host).
+
+You will see something like:
+{"text": "sample text info "}
+
+Interactive API docs¶
+Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
+
+You will see the automatic interactive API documentation (provided by Swagger UI):
