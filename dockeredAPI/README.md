@@ -20,6 +20,6 @@ Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equiva
 
 You will see the automatic interactive API documentation (provided by Swagger UI)
 
-In Dockerfile:
+#### Note In Dockerfile:
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 This adjusts the Uvicorn command to use the new module main (instead of app.main as directory app is not added in docker container) to import the FastAPI object app.
