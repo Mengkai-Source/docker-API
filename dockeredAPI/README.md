@@ -22,4 +22,5 @@ You will see the automatic interactive API documentation (provided by Swagger UI
 
 #### Note In Dockerfile:
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
-This adjusts the Uvicorn command to use the new module main (instead of app.main as directory "app" is not added in docker container) to import the FastAPI object app. (Reference: https://fastapi.tiangolo.com/deployment/docker/)
+This adjusts the Uvicorn command to use the new module main (instead of app.main as directory "app" is not added in docker container) to import the FastAPI object app. (Reference: https://fastapi.tiangolo.com/deployment/docker/), 
+please refer to https://pythonspeed.com/articles/docker-connection-refused/ for port-forwarding (e.g. "--host", "0.0.0.0", "--port", "80").
