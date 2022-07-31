@@ -1,0 +1,2 @@
+Go to terminal and run the command "uvicorn iris_api:app  --reload"
+Go to web browser (Google Chrome is recommended) and type in "http://127.0.0.1:8000/docs"
